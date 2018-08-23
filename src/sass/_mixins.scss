@@ -1,0 +1,55 @@
+@mixin darkAfterOverlay {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@mixin sectionPadding {
+    padding-top: 100px;
+    padding-bottom: 85px;
+}
+
+@mixin easing {
+    transition: all .3s ease-in-out;
+}
+
+// Footer widths
+
+@mixin footer-width {
+    .footer-top .widget.col-lg-3:nth-child(1) {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+    .footer-top .widget.col-lg-3:nth-child(2) {
+        max-width: 16.666667%;
+        flex: 0 0 16.666667%;
+    }
+    .footer-top .widget.col-lg-3:nth-child(3) {
+        max-width: 31.333333%;
+        flex: 0 0 31.333333%;
+    }
+    .footer-top .widget.col-lg-3:nth-child(4) {
+        max-width: 27%;
+        flex: 0 0 27%;
+    }
+}
+
+// Media queries
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media (min-width: #{$desk}) {
+        @content;
+    }
+}

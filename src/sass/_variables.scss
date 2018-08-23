@@ -1,0 +1,29 @@
+// Fonts
+//
+$poppins: 'Poppins', sans-serif;
+$lato: 'Lato', sans-serif;
+
+// colors
+// 
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$colors: ( 
+    primary: #0a6db7,
+    dark-primary: #302e4e,
+    top-nav-txt: #bebec0,
+    top-nav-bg: #303038,
+    body-txt: #242424,
+    footer-txt: #dedede,
+    footer-bg: #151414
+);
+
+// heights
+//
+$banner-height: 290px;
+
+// Media Queries
+//
+$mobile: 768px;
+$desk: 992px;

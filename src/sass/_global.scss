@@ -1,0 +1,100 @@
+// Bootstrap color reset 
+.bg-info {
+    background-color: color(primary) !important;
+}
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: color(primary) !important;
+    border-color: color(primary) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    cursor: pointer;
+}
+
+.btn.btn-primary,
+.btn.btn-outline-light {
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+// Bootstrap Progress Bar
+.progress {
+    box-shadow: 0px 0px 0px 2px #ffffff;
+    background-color: transparent;
+}
+
+ngb-progressbar {
+    position: relative;
+    display: block;
+    margin-bottom: 60px;
+    .progress-number {
+        position: absolute;
+        top: -28px;
+        right: 21px;
+        font-size: 14px;
+    }
+    .progress-heading {
+        position: absolute;
+        top: -28px;
+        left: 10px;
+        font-size: 16px;
+    }
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+// Global Styles
+body {
+    font-family: $lato;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: $poppins;
+    color: #424242;
+}
+
+p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #505050;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:after, a:before, button, button:focus {
+    transition: all .3s ease-in-out;
+    text-decoration: none !important;
+    outline: none !important;
+}
+

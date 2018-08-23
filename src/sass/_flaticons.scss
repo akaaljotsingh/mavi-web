@@ -1,0 +1,63 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 26/08/2018 10:32
+  	*/
+
+      @font-face {
+        font-family: "Flaticon";
+        src: 
+             url("../assets/fonts/Flaticon.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      // @media screen and (-webkit-min-device-pixel-ratio:0) {
+      //   @font-face {
+      //     font-family: "Flaticon";
+      //     src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+      //   }
+      // }
+      
+      [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+      [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+        font-family: Flaticon;
+              font-size: 20px;
+      font-style: normal;
+      }
+      
+      .flaticon-comment:before { content: "\f100"; }
+      .flaticon-chat:before { content: "\f101"; }
+      .flaticon-folder-2:before { content: "\f102"; }
+      .flaticon-analytics-1:before { content: "\f103"; }
+      .flaticon-analytics:before { content: "\f104"; }
+      .flaticon-call:before { content: "\f105"; }
+      .flaticon-left-arrow:before { content: "\f106"; }
+      .flaticon-right-arrow:before { content: "\f107"; }
+      .flaticon-back:before { content: "\f108"; }
+      .flaticon-next:before { content: "\f109"; }
+      .flaticon-diamond:before { content: "\f10a"; }
+      .flaticon-loupe:before { content: "\f10b"; }
+      .flaticon-coding:before { content: "\f10c"; }
+      .flaticon-folder-1:before { content: "\f10d"; }
+      .flaticon-people:before { content: "\f10e"; }
+      .flaticon-team:before { content: "\f10f"; }
+      .flaticon-computer:before { content: "\f110"; }
+      .flaticon-account:before { content: "\f111"; }
+      .flaticon-cogwheel-1:before { content: "\f112"; }
+      .flaticon-thinking:before { content: "\f113"; }
+      .flaticon-rocket:before { content: "\f114"; }
+      .flaticon-system:before { content: "\f115"; }
+      .flaticon-time:before { content: "\f116"; }
+      .flaticon-creative-process:before { content: "\f117"; }
+      .flaticon-folder:before { content: "\f118"; }
+      .flaticon-process:before { content: "\f119"; }
+      .flaticon-coins:before { content: "\f11a"; }
+      .flaticon-connection:before { content: "\f11b"; }
+      .flaticon-signs:before { content: "\f11c"; }
+      .flaticon-technology:before { content: "\f11d"; }
+      .flaticon-clock:before { content: "\f11e"; }
+      .flaticon-message:before { content: "\f11f"; }
+      .flaticon-arrows:before { content: "\f120"; }
+      .flaticon-business:before { content: "\f121"; }
+      .flaticon-game:before { content: "\f122"; }
+      .flaticon-cogwheel:before { content: "\f123"; }
