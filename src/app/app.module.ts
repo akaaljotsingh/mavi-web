@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ServicesComponent } from './services/services.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    HomepageComponent
+    HomepageComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

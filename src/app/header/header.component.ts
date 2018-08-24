@@ -8,12 +8,18 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
+  isNavbarCollapsed: any;
+  showNavigationIndicators: any;
 
-  faCoffee = faCoffee;
+  menuToggle() {
+    var el = document.getElementById("navbarSupportedContent");
+    el.classList.toggle('show');
+  }
 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
