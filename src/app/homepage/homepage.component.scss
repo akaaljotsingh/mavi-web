@@ -204,86 +204,6 @@ i {
     }
 }
 
-.blog {
-    @include sectionPadding;
-    @include mobile {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        text-align: center;
-    }
-    .single-blog-post {
-        border: 1px solid #dddddd;
-        border-radius: 5px;
-        margin-bottom: 30px;
-        .post-thumb-wrapper {
-            position: relative;
-            height: 220px;
-            overflow: hidden;
-            border-radius: 5px 5px 0 0;
-            background-image: url('../../assets/homepage/mainbanner/pic1.jpg');
-            background-size: cover;
-        }
-        .post-content {
-            font-weight: 400;
-            font-size: 15px;
-            color: #505050;
-            padding: 15px;
-            @include mobile {
-                text-align: left;
-            }
-            a {
-                h4 {
-                    font-size: 22px;
-                    font-weight: 700;
-                    font-family: $poppins;
-                    margin-top: 5px;
-                    margin-bottom: 10px;
-                    color: color(body-txt);
-                    @include easing;
-                }
-                &:hover h4 {
-                    color: color(primary);
-                }
-            }
-            .read-more-btn {
-                font-size: 20px;
-                margin-top: 8px;
-                position: relative;
-                display: inline-block;
-                @include mobile {
-                    font-size: 18px;
-                }
-                &:before {
-                    position: absolute;
-                    display: inline-block;
-                    content: '>';
-                    right: -15px;
-                    top: 3px;
-                    opacity: 0;
-                    visibility: hidden;
-                    @include easing;
-                    top: 0px;
-                }
-                &:hover:before {
-                    right: -22px;
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-            .post-header-meta {
-                color: #8e8e8e;
-                font-weight: 400;
-                font-size: 15px;
-                margin-bottom: 8px;
-                i {
-                    font-size: 17px;
-                    margin-right: 10px;
-                }
-            }
-        }
-    }
-}
-
 .cta-area {
     background-color: color(primary);
     padding: 50px 0 48px;
@@ -320,11 +240,5 @@ i {
             text-align: center;
             background-image: none;
         }
-    }
-}
-
-.map {
-    iframe {
-        margin-bottom: -6px;
     }
 }

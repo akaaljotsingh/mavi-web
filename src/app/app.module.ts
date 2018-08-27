@@ -13,6 +13,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ServicesComponent } from './services/services.component';
+import { FormsComponent } from './forms/forms.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { ServicesComponent } from './services/services.component';
     FooterComponent,
     NotFoundComponent,
     HomepageComponent,
-    ServicesComponent
+    ServicesComponent,
+    FormsComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
