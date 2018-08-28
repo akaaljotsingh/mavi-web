@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -31,13 +33,15 @@ import { ContactComponent } from './contact/contact.component';
     BlogComponent,
     ContactComponent
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+    
     NgbModule,
     Ng2CarouselamosModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
