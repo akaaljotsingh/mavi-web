@@ -16,6 +16,9 @@ export class HeaderComponent implements OnInit {
     el.classList.toggle('show');
   }
 
+
+  
+
   constructor() { }
 
   ngOnInit() {

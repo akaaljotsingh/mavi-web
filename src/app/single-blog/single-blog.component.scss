@@ -1,0 +1,31 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+@import '../../sass/global';
+//
+.content {
+    @include sectionPadding;
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    img {
+        border-radius: 5px;
+    }
+    .post-header-meta {
+        color: #505050;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        i {
+            color: color(primary);
+        }
+    }   
+    .mark-line {
+        padding-left: 20px;
+        border-left: 6px solid color(primary);
+        font-style: italic;
+    }
+    .blog-nav {
+        margin-top: 48px;
+    }
+}

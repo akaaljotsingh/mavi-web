@@ -18,6 +18,7 @@ import { ServicesComponent } from './services/services.component';
 import { FormsComponent } from './forms/forms.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ContactComponent } from './contact/contact.component';
     ServicesComponent,
     FormsComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    SingleBlogComponent
   ],
   imports:[
  CommonModule,
