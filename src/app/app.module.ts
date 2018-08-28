@@ -19,6 +19,8 @@ import { FormsComponent } from './forms/forms.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { SingleBlogComponent } from './single-blog/single-blog.component';
     FormsComponent,
     BlogComponent,
     ContactComponent,
-    SingleBlogComponent
+    SingleBlogComponent,
+    DashboardComponent,
+    LoginComponent
   ],
   imports:[
  CommonModule,

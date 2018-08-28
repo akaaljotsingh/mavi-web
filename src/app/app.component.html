@@ -1,6 +1,15 @@
-<app-header></app-header>
-<!-- <app-about></app-about> -->
+<div *ngIf="!login">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>
 
+<div *ngIf="login">
+    <div *ngIf="!loginKey">
+        <app-login></app-login>
+    </div>
 
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+    <div *ngIf="loginKey">
+        <app-dashboard></app-dashboard>
+    </div>
+</div>

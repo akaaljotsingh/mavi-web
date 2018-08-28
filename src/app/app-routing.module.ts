@@ -11,6 +11,7 @@ import { FormsComponent } from './forms/forms.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'single-blog', component: SingleBlogComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
