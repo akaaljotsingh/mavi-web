@@ -81,14 +81,19 @@ app-header {
             display: none;
             @include mobile {
                 display: block;
-                margin-left: 15px;
+                margin-left: 0px;
             }
         }
-        .navbar-toggler-icon {
-            font-size: 29px;
-            color: #fff;
-            height: 42px;
-            padding: 6px;
+        .navbar-toggler {
+            @include mobile {
+                padding: 0;
+            }
+            .navbar-toggler-icon {
+                font-size: 29px;
+                color: #fff;
+                height: 42px;
+                padding: 6px;
+            }
         }
         .navbar-nav {
             padding: 2px 0;
@@ -695,7 +700,6 @@ section.dark {
 }
 
 // Info Section 
-
 .info {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -711,18 +715,21 @@ section.dark {
         color: color(body-txt);
         font-size: 1.5rem;
     }
-    .row, .blue-section {
+    .row,
+    .blue-section {
         margin-top: 40px;
         margin-bottom: 40px;
     }
     .blue-section {
         background-color: color(primary);
         padding: 30px;
-        h2, p {
+        h2,
+        p {
             color: #ffffff;
         }
     }
-    .info-list, .check-list {
+    .info-list,
+    .check-list {
         padding-left: 40px;
         li {
             margin-bottom: 10px;
@@ -740,7 +747,6 @@ section.dark {
 }
 
 // Blog Section 
-
 .blog {
     @include sectionPadding;
     @include mobile {
@@ -810,8 +816,8 @@ section.dark {
         }
     }
 }
-// date section of BLOG
 
+// date section of BLOG
 .post-header-meta {
     color: #8e8e8e;
     font-weight: 400;
