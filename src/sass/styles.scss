@@ -67,7 +67,7 @@ app-header {
                 strong {
                     font-size: 15px;
                 }
-                p { 
+                p {
                     font-size: 14px;
                     margin: 0;
                     line-height: 1.3;
@@ -827,4 +827,85 @@ section.dark {
         font-size: 17px;
         margin-right: 10px;
     }
+}
+
+// Animation
+.carousel-item {
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+    visibility: hidden;
+}
+
+.carousel-item .carousel-caption h3,
+.carousel-item .carousel-caption h2,
+.carousel-item .carousel-caption p,
+.carousel-item .carousel-caption .call-btn {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption h3,
+.carousel-item.active .carousel-caption h2,
+.carousel-item.active .carousel-caption p,
+.carousel-item.active .carousel-caption .call-btn {
+    position: relative;
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-item.active .carousel-caption h3 {
+    transition-delay: 0.3s;
+}
+
+.carousel-item.active .carousel-caption h2 {
+    transition-delay: 0.6s;
+}
+
+.carousel-item.active .carousel-caption p {
+    transition-delay: 0.9s;
+}
+
+.carousel-item.active .carousel-caption .call-btn {
+    transition-delay: 1.1s;
+}
+
+.carousel-item>img {
+    transform: scale(2);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.carousel-item.active>img {
+    position: relative;
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-item.active {
+    position: relative; // transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 20;
+}
+
+.carousel-indicators {
+    z-index: 20;
+}
+
+// Sticky Header 
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
 }
