@@ -93,6 +93,7 @@ app-header {
         .navbar-nav {
             padding: 2px 0;
             float: right;
+            margin-top: 15px;
             @include mobile {
                 float: left;
                 width: 100%;
@@ -100,7 +101,7 @@ app-header {
             }
             .nav-item {
                 @include mobile {
-                    text-align: center;
+                    text-align: left;
                 }
                 a {
                     color: #ffffff;
@@ -111,7 +112,9 @@ app-header {
                     font-weight: 400;
                     position: relative;
                     @include mobile {
-                        text-align: center;
+                        text-align: left;
+                        padding: 10px;
+                        padding-left: 0;
                     }
                     &:after {
                         content: '';
@@ -125,6 +128,14 @@ app-header {
                         right: 0;
                         margin: auto;
                         opacity: 0;
+                        @include mobile {
+                            text-align: left;
+                            padding: 10px;
+                            padding-left: 0;
+                            margin: initial;
+                            bottom: 4px;
+                            top: auto;
+                        }
                     }
                     &:hover:after {
                         opacity: 1;
@@ -135,6 +146,7 @@ app-header {
                 text-transform: uppercase;
                 padding: 12px 30px;
                 margin-top: 4px;
+                margin-bottom: 15px;
             }
             .search-btn {
                 @include mobile {
@@ -150,6 +162,12 @@ app-header {
                         padding: 15px;
                         width: 100%;
                         margin-bottom: 15px;
+                        @include mobile {
+                            padding: 10px;
+                            padding-left: 0;
+                            margin-bottom: 8px;
+                            text-align: left;
+                        }
                     }
                 }
                 span {
