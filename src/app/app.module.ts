@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -39,11 +40,10 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     LoginComponent
   ],
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
-    
+  imports: [
+    CommonModule,
+    NgtUniversalModule,
+    NgwWowModule.forRoot(),
     NgbModule,
     Ng2CarouselamosModule,
     AppRoutingModule

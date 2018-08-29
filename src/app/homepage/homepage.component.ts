@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { NgwWowService } from 'ngx-wow';
+import { Subscription }   from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-homepage',
@@ -9,14 +14,20 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 export class HomepageComponent implements OnInit {
 
   showNavigationIndicators:any;
+  private wowSubscription: Subscription;
 
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig, private router: Router, private wowService: NgwWowService) {
     // customize default values of carousels used by this component tree
     config.interval = 3000;
     config.pauseOnHover = false;
+    this.wowService.init(); 
   }
 
   ngOnInit() {
+    this.wowSubscription = this.wowService.itemRevealed$.subscribe(
+      (item:HTMLElement) => {
+        // do whatever you want with revealed element
+      });
     
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
@@ -35,6 +46,11 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+  }
+
+  ngOnDestroy() {
+    // unsubscribe (if necessary) to WOW observable to prevent memory leaks
+    this.wowSubscription.unsubscribe();
   }
 
 }

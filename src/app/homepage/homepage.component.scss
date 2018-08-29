@@ -16,7 +16,11 @@ i {
 
 // end straw
 .carousel-wrap {
+    min-height: 615px;
     position: relative;
+    @include mobile {
+        min-height: 50px;
+    }
     .carousel-caption {
         position: absolute;
         right: 15%;

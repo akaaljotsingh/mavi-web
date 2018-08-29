@@ -1,7 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { Component, OnInit } from '@angular/core';
+// import { NgwWowService } from 'ngx-wow';
+// import { Subscription } from 'rxjs';
 
-// library.add(fas, far);
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { NgwWowService } from 'ngx-wow';
+import { Subscription }   from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +14,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
   isNavbarCollapsed: any;
   showNavigationIndicators: any;
+  private wowSubscription: Subscription;
 
   menuToggle() {
     var el = document.getElementById("navbarSupportedContent");
@@ -19,10 +24,19 @@ export class HeaderComponent implements OnInit {
 
   
 
-  constructor() { }
+  constructor(private router: Router, private wowService: NgwWowService) { 
+      this.wowService.init(); 
+   }
 
   ngOnInit() {
-    
+    this.wowSubscription = this.wowService.itemRevealed$.subscribe(
+      (item:HTMLElement) => {
+        // do whatever you want with revealed element
+      });
+  }
+  ngOnDestroy() {
+    // unsubscribe (if necessary) to WOW observable to prevent memory leaks
+    this.wowSubscription.unsubscribe();
   }
 
 }

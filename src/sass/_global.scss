@@ -67,6 +67,7 @@ ngb-progressbar {
 .light-grey-bg {
     background-color: color(light-grey);
 }
+
 body {
     font-family: $lato;
 }
@@ -101,9 +102,190 @@ ul {
     margin: 0;
 }
 
-a, a:after, a:before, button, button:focus {
+a,
+a:after,
+a:before,
+button,
+button:focus {
     transition: all .3s ease-in-out;
     text-decoration: none !important;
     outline: none !important;
 }
 
+// Animations 
+// @function animate($delay) {
+//     @return "animation: move "$delay "ease-in";
+// }
+.dl-1 {
+    animation-delay: .3s !important;
+}
+
+.dl-2 {
+    animation-delay: .6s !important;
+}
+
+.dl-3 {
+    animation-delay: .9s !important;
+}
+
+.dl-4 {
+    animation-delay: 1.1s !important;
+}
+
+.dl-5 {
+    animation-delay: 1.2s !important;
+}
+
+.dl-6 {
+    animation-delay: 1.3s !important;
+}
+
+//small delays
+.dlsm-1 {
+    animation-delay: .2s !important;
+}
+
+.dlsm-2 {
+    animation-delay: .4s !important;
+}
+
+.dlsm-3 {
+    animation-delay: .6s !important;
+}
+
+.dlsm-4 {
+    animation-delay: .8s !important;
+}
+
+.dlsm-5 {
+    animation-delay: 1s !important;
+}
+
+.dlsm-6 {
+    animation-delay: 1.2s !important;
+}
+
+// extra small delay
+.dlexsm-1 {
+    animation-delay: .1s !important;
+}
+
+.dlexsm-2 {
+    animation-delay: .15s !important;
+}
+
+.dlexsm-3 {
+    animation-delay: .2s !important;
+}
+.dlexsm-4 {
+    animation-delay: .25s !important;
+}
+
+.dlexsm-5 {
+    animation-delay: .3s !important;
+}
+
+.dlexsm-6 {
+    animation-delay: .35s !important;
+}
+
+.dlexsm-7 {
+    animation-delay: .4s !important;
+}
+
+.dlexsm-8 {
+    animation-delay: .45s !important;
+}
+
+.myFadeInLeft {
+    animation-name: myfadeInLeft;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}
+
+.myFadeInRight {
+    animation-name: myFadeInRight;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}
+.myFadeInRightFast {
+    animation-name: myFadeInRight;
+    animation-duration: 0s;
+    animation-timing-function: ease-in-out;
+}
+
+.myFadeInUp {
+    animation-name: myFadeInUp;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}
+
+.myFadeInUpFast {
+    animation-name: myFadeInUp;
+    animation-duration: 0s;
+    animation-timing-function: ease-in-out;
+}
+.myBounce {
+    animation-name: myBounce;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myfadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-20px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes myFadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(20px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes myFadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes myBounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, -4px, 0);
+    }
+  }
