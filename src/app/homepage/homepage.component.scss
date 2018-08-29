@@ -73,6 +73,7 @@ i {
         bottom: 20px;
         left: 0;
         right: 0;
+        z-index: 20;
         margin: auto;
         @include mobile {
             position: unset;
