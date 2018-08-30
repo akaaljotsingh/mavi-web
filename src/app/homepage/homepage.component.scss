@@ -32,7 +32,7 @@ i {
         text-align: left;
         top: 0;
         bottom: 0;
-        height: min-content;
+        max-height: 440px;
         margin: auto;
         @include mobile {
             left: 14%;

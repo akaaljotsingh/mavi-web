@@ -83,6 +83,7 @@ app-header {
             @include mobile {
                 display: block;
                 margin-left: 0px;
+                padding: .5rem 1rem;
             }
         }
         .navbar-toggler {
@@ -136,7 +137,7 @@ app-header {
                         opacity: 0;
                         @include mobile {
                             text-align: left;
-                            padding: 10px;
+                            padding: 0px;
                             padding-left: 0;
                             margin: initial;
                             bottom: 4px;
@@ -473,7 +474,7 @@ section.dark {
         margin-bottom: 5px;
         @include mobile {
             font-size: 30px !important;
-            line-height: 15px !important;
+            line-height: 34px !important;
         }
     }
     .title-shape {
