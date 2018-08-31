@@ -178,7 +178,7 @@ i {
 .why-choose-us {
     .container {
         background-image: url(../../assets/homepage/lady.png);
-        background-size: 550px;
+        background-size: 500px;
         background-position: bottom right;
         background-repeat: no-repeat;
         @include sectionPadding;
@@ -188,6 +188,9 @@ i {
             text-align: center;
             background-image: none;
         }
+    }
+    .single-choose-us-box {
+        margin-bottom: 40px;
     }
     .choose_us-content-wrapper {
         position: relative;
