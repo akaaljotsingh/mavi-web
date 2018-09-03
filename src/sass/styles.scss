@@ -7,6 +7,12 @@
 *************************************************
 **/
 
+body {
+    @include mobile {
+        padding-top: 72px;
+    }
+}
+
 // Header
 app-header {
     .logo img {
@@ -78,6 +84,12 @@ app-header {
     .navbar {
         background-color: color(dark-primary);
         padding: 0;
+        @include mobile {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 30;
+        }
         .navbar-brand {
             display: none;
             @include mobile {
