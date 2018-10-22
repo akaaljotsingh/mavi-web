@@ -94,11 +94,12 @@ i {
                 border: 1px solid #ddd;
                 margin-bottom: 20px;
             }
-            i {
+            img {
                 font-size: 35px;
                 position: absolute;
                 left: 15px;
-                top: 12px;
+                top: 16px;
+                max-width: 32px;
             }
             p {
                 line-height: 1.3;
@@ -131,9 +132,13 @@ i {
             @include mobile {
                 margin-bottom: 20px;
             }
+            .about-box-top-icon img {
+              margin-bottom: 20px;
+              max-width: 90px;
+            }
             &:hover {
                 color: #fff;
-                background-color: grey;
+                background-color: #b7b6c1;
                 p {
                     color: #ffffff;
                 }
@@ -204,6 +209,10 @@ i {
         font-size: 40px;
         left: 0;
         top: -5px;
+        img {
+          min-width: 40px;
+    margin-top: -7px;
+        }
     }
     h4 {
         font-family: $poppins;
